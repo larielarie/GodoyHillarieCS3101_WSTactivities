@@ -1,0 +1,116 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    height: 100vh; 
+    display: flex;
+    justify-content: center; 
+    align-items: center;
+    background-image: url('background.jpg'); 
+    background-size: contain; 
+    background-position: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center; 
+    flex-wrap: wrap; 
+    background-color: rgba(255, 255, 255, 0.8); 
+    padding: 20px;
+    border-radius: 10px;
+}
+
+.box {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 10px;
+    width: 300px; 
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.about-me {
+    background-color: #e0f7fa;
+}
+
+.about-me-content {
+    display: flex; 
+    align-items: center; 
+}
+
+.profile-image {
+    width: 80px; 
+    height: 80px; 
+    border-radius: 50%; 
+    margin-right: 15px; 
+}
+
+.contact-info {
+    background-color: #ffe0b2; 
+}
+
+.social-links {
+    background-color: #f1f8e9; 
+    text-align: center; 
+    padding: 15px; 
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    margin: 10px; 
+}
+
+.social-item {
+    margin: 10px 0; 
+}
+
+.social-button {
+    display: inline-flex; 
+    align-items: center; 
+    margin: 5px; 
+    padding: 10px 15px;
+    border-radius: 5px;
+    color: white;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+.social-button.facebook {
+    background-color: #3b5998; 
+}
+
+.social-button.twitter {
+    background-color: #1DA1F2; 
+}
+
+.social-button.instagram {
+    background-color: #C13584; 
+}
+
+.social-button:hover {
+    opacity: 0.8; 
+    transform: translateY(-2px); 
+}
+
+.contact-info h2,
+.social-links h2 {
+    text-align: center; 
+    margin-top: 0;
+}
+
+.contact-info p,
+.social-links p {
+    text-align: left; 
+}
+
+.contact-info i,
+.social-links i {
+    margin-right: 10px; 
+    color: #555; 
+}
+
+.box:hover {
+    background-color: #f0f0f0; 
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); 
+}
