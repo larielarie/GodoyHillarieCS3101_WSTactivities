@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Vision Board</title>
+    <link rel="stylesheet" href="vision.css">
+</head>
+<body>
+    <header>
+        <h1>Hillarie's Vision Board</h1>
+    </header>
+
+    <section class="vision-board">
+        <div class="vision-item">
+            <img src="image1.jpg" alt="Goal 1">
+        </div>
+        <div class="vision-item">
+            <img src="image2.jpg" alt="Goal 2">
+        </div>
+        <div class="vision-item">
+            <img src="image3.jpg" alt="Goal 3">
+        </div>
+        <div class="vision-item">
+            <img src="image4.jpg" alt="Goal 4">
+        </div>
+        <div class="vision-item">
+            <img src="image5.jpg" alt="Goal 5">
+        </div>
+    </section>
+
+    <section class="goals-container">
+        <div class="goals-box">
+            <h2>5 Goals</h2>
+            <ul>
+                <li>Change routines</li>
+                <li>Happy life</li>
+                <li>Learn how to communicate</li>
+                <li>Have a pet</li>
+                <li>Travel more</li>
+            </ul>
+        </div>
+        <div class="quote-image">
+            <img src="image6.jpg" alt="Inspiring Quote"> 
+        </div>
+        <div class="music-image" onclick="playMusic()">
+            <img src="this is me.jpg" alt="Play Music"> 
+        </div>
+        <audio id="music" src="thisisme.mp3"></audio> 
+    </section>
+
+    <script>
+        function playMusic() {
+            var audio = document.getElementById('music');
+            audio.play();
+        }
+    </script>
+</body>
+</html>

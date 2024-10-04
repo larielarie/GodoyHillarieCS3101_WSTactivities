@@ -1,0 +1,124 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f8ff;
+    color: #333;
+    text-align: center;
+}
+
+header {
+    background-color: #4682b4;
+    padding: 10px 20px; 
+    color: white;
+    font-size: 1.5rem;
+    border-radius: 15px; 
+    width: fit-content; 
+    margin: 20px auto; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+}
+
+.vision-board {
+    display: flex;
+    flex-wrap: wrap; 
+    justify-content: center; 
+    gap: 10px;
+    padding: 20px;
+    margin: 0 auto;
+}
+
+.vision-item {
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    width: 100%; 
+    max-width: 180px; 
+    aspect-ratio: 1 / 1; 
+    padding: 10px;
+    text-align: center;
+    transition: transform 0.3s;
+}
+
+.vision-item:hover {
+    transform: scale(1.05);
+}
+
+.vision-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+    border-radius: 10px;
+}
+
+.vision-item p {
+    margin-top: 10px;
+    font-size: 1rem;
+}
+
+.goals-container {
+    display: flex; 
+    justify-content: center;
+    align-items: flex-start; 
+    margin: 20px auto;
+}
+
+.goals-box {
+    display: inline-block; 
+    margin: 20px;
+    padding: 10px 15px;
+    background-image: url('background-image-7.jpg.jpg'); 
+    background-size: cover; 
+    background-position: center; 
+    border-radius: 10px; 
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
+    text-align: left; 
+}
+
+.goals-box h2 {
+    margin-bottom: 10px; 
+    color: black; 
+}
+
+.goals-box ul {
+    list-style-type: disc; 
+    padding-left: 20px; 
+    color: black;
+}
+
+.goals-box li {
+    margin-bottom: 5px; 
+}
+
+.quote-image {
+    margin-left: 20px;
+}
+
+.quote-image img {
+    max-width: 200px; 
+    height: auto; 
+    border-radius: 10px; 
+}
+
+.music-image {
+    margin-left: 20px; 
+    width: 250px;  
+    height: 100px; 
+    overflow: hidden; 
+    border-radius: 10px; 
+    position: relative; 
+}
+
+.music-image img {
+    width: 100%; 
+    height: 100%; 
+    object-fit: contain; 
+    transition: transform 0.3s;
+}
+
+.music-image img:hover {
+    transform: scale(1.05); 
+}
