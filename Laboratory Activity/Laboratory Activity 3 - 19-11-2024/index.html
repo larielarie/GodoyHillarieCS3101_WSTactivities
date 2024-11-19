@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Word and Sentence Counter</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Word and Sentence Counter</h2>
+        <textarea id="textInput" placeholder="Enter your text here..."></textarea>
+        <div id="wordcount">Words: 0</div>
+        <div id="sentenceCount">Sentences: 0</div>
+    </div>
+
+    <script>
+        const textInput = document.getElementById("textInput");
+        const wordCountDisplay = document.getElementById("wordcount");
+        const sentenceCountDisplay = document.getElementById("sentenceCount");
+
+        function updateCounts() {
+            const text = textInput.value.trim();
+            const words = text.split(/\s+/).filter(word => word.length > 0);
+            const wordCount = words.length;
+            const sentences = text.split(/[.!?]\s+/).filter(sentence => sentence.length > 0);
+            const sentenceCount = sentences.length;
+
+            wordCountDisplay.textContent = `Words: ${wordCount}`;
+            sentenceCountDisplay.textContent = `Sentences: ${sentenceCount}`;
+        }
+
+        textInput.addEventListener("input", updateCounts);
+    </script>
+</body>
+</html>
